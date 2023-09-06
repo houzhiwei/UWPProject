@@ -31,7 +31,7 @@
                             <RowDefinition Height="180" />
                         </Grid.RowDefinitions>
 
-                        <ContentControl
+                        <ContentPresenter
                             Grid.Row="1"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
@@ -42,7 +42,7 @@
             </GridView.ItemTemplate>
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate x:Name="clu">
-                    <ItemsWrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal" />
+                    <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal" />
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>

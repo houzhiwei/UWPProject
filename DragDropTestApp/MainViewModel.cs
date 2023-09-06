@@ -15,11 +15,11 @@ namespace DragDropTestApp
         public ObservableCollection<PreviewItem> PreviewItems = new ObservableCollection<PreviewItem>();
         public MainViewModel()
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 20; i++)
             {
                 var item = new PreviewItem();
                 item.ImageThumbnail = new Windows.UI.Xaml.Controls.Image();
-                ImageSource result = new BitmapImage(new Uri("ms-appx:///Assets/Square150x150Logo.png"));
+                ImageSource result = new BitmapImage(new Uri($"ms-appx:///Assets/{i + 1}.png"));
                 item.ImageThumbnail.Source = result;
 
                 PreviewItems.Add(item);
