@@ -31,7 +31,8 @@ namespace DragDropTestApp
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-            grid.UpdateLayout();
+            grid.ItemsSource = null;
+            grid.ItemsSource = ViewModel.PreviewItems;
 		}
 	}
 }
